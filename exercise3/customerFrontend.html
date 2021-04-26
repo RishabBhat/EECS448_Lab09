@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel = "stylesheet" href = "style.css">
+
+<h1>Exercise 3 Shop, By Rishab Bhat</h1>
+
+<h2>#2 Pencil: $3 </h2>
+<img src="pencil1.jfif" alt="Trulli" width="200" height="133">
+
+<h2>Mechanical Pencil: $5 </h2>
+<img src="mechpen.jfif" alt="Trulli" width="200" height="133">
+
+<h2>Unsharpened Pencil: $2 </h2>
+<img src="unsharp.jfif" alt="Trulli" width="200" height="133">
+
+
+<form action="customerBackend.php" method="post">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="pwd" minlength="8" required><br><br>
+
+
+
+
+Choose your pencils: <br>
+<input type="radio" id="#2" name="pencil" value="#2" required>
+  <label for="#2">#2 Pencil($3) </label><br>
+Quantity: 
+<input type="text" name="QuantP1" id = "QuantP1"> <br> <br>
+<input type="radio" id="Mechanical Pencil" name="pencil" value="Mechanical Pencil" required>
+  <label for="Mechanical Pencil">Mechanical Pencil($5)</label><br>
+Quantity: 
+<input type="text" name="QuantP2" > <br> <br>
+<input type="radio" id="Unsharpened Pencil" name="pencil" value="Unsharpened Pencil" required>
+  <label for="Unsharpened Pencil">Unsharpened Pencil($2)</label><br>
+Quantity: 
+<input type="text" name="QuantP3" ><br> <br>
+
+
+
+
+Choose your shipping: <br>
+<input type="radio" id="7Day" name="shipping" value="7day" required>
+  <label for="7day">Free 7 Day</label><br>
+<input type="radio" id="overnight" name="shipping" value="overnight">
+  <label for="overnight">Overnight ($50)</label><br>
+<input type="radio" id="3day" name="shipping" value="3day">
+  <label for="3day">3 day ($5)</label><br><br>
+
+<input type="reset" value="Reset">
+  <input type="submit" onclick = "ValidateEmail(email)"/> 
+
+<script src="formCheckerjs"></script>
+
+
+</form>
+
+</body>
+</html>
